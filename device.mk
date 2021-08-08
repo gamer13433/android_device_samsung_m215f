@@ -10,7 +10,10 @@ DEVICE_PATH := device/samsung/m307fn
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
     
-include $(DEVICE_PATH)/device/*.mk
+# INIT (RIL) #
+PRODUCT_PACKAGES += \
+    init.vendor.rilchip.rc \
+    init.vendor.rilcommon.rc
 
 # NFC #
 PRODUCT_PACKAGES += \
