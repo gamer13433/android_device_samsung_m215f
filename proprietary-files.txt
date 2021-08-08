@@ -1,3 +1,14 @@
+# NFC #
+system/etc/libnfc-nci.conf:vendor/etc/libnfc-nci.conf
+system/lib64/libNfcProperties.so
+system/lib64/vendor.samsung.hardware.nfc@2.0.so
+vendor/bin/hw/sec.android.hardware.nfc@1.2-service
+vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc
+vendor/firmware/nfc/sec_s3nrn82_firmware.bin
+vendor/lib64/libNfcProperties.so
+vendor/lib64/nfc_nci_sec.so
+vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
+
 # RIL #
 vendor/bin/hw/rild
 vendor/bin/cbd

@@ -1,4 +1,13 @@
 <manifest version="1.0" type="device" target-level="4">
+    <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
@@ -24,6 +33,15 @@
     <hal format="hidl" override="true">
         <name>vendor.samsung.hardware.radio</name>
         <transport>hwbinder</transport>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehNfc</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio</name>
