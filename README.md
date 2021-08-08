@@ -1,5 +1,5 @@
-# andorid_device_samsung_m307f
-LineageOS Device Tree for Samsung Galaxy M30s|M307F Model
+# andorid_device_samsung_m307fn
+LineageOS Device Tree for Samsung Galaxy M30s|M307FN Model
 
 # How to Build
 # Sync the latest sources
@@ -10,7 +10,7 @@ repo sync
 # Fetch Dependencies
 clone android_device_samsung_m30s-common to device/samsung/m30s-common
 
-clone android_device_samsung_m307f to device/samsung/m307f
+clone android_device_samsung_m307fn to device/samsung/m307fn
 
 clone android_kernel_samsung_m30s-common to kernel/samsung/m30s-common
 
@@ -30,6 +30,6 @@ ccache -o compression=true
 # Build
 source build/envsetup.sh
 
-lunch lineage_m307f-userdebug
+lunch lineage_m307fn-userdebug
 
 mka bacon

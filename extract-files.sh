@@ -14,7 +14,7 @@ fi
 
 set -e
 
-export DEVICE=m307f
+export DEVICE=m307fn
 export DEVICE_COMMON=m30s-common
 export VENDOR=samsung
 

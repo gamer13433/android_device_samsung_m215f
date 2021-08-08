@@ -14,25 +14,25 @@
 # limitations under the License.
 
 include device/samsung/m30s-common/BoardConfigCommon.mk
-include vendor/samsung/m307f/BoardConfigVendor.mk
+include vendor/samsung/m307fn/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/m307f
+DEVICE_PATH := device/samsung/m307fn
 
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/device_manifest.xml
 
 PRODUCT_PLATFORM := universal9611
 
-TARGET_OTA_ASSERT_DEVICE := m307f,m30s,m30sdd
+TARGET_OTA_ASSERT_DEVICE := m307fn,m30s,m30sdd
 
 # APEX IMAGE #
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # KERNEL #
-TARGET_KERNEL_CONFIG := m307f_defconfig
+TARGET_KERNEL_CONFIG := m307fn_defconfig
 
 # PROPS #
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # VENDOR SECURITY PATCH DATE #
-VENDOR_SECURITY_PATCH := 2021-05-01
+VENDOR_SECURITY_PATCH := 2021-08-01
