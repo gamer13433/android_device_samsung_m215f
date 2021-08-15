@@ -1,11 +1,11 @@
 # COMMON #
-$(call inherit-product, device/samsung/m30s-common/m30s-common.mk)
+$(call inherit-product, device/samsung/m21-common/m21-common.mk)
 # PROPRIETARY VENDOR FILES #
-$(call inherit-product, vendor/samsung/m307f/m307fn-vendor.mk)
+$(call inherit-product, vendor/samsung/m215f/m215f.mk)
 # DALVIK #
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-DEVICE_PATH := device/samsung/m307fn
+DEVICE_PATH := device/samsung/m215f
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage

@@ -13,16 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/samsung/m30s-common/BoardConfigCommon.mk
-include vendor/samsung/m307fn/BoardConfigVendor.mk
+include device/samsung/m21-common/BoardConfigCommon.mk
+include vendor/samsung/m215f/BoardConfigVendor.mk
 
-DEVICE_PATH := device/samsung/m307fn
+DEVICE_PATH := device/samsung/m215f
 
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/device_manifest.xml
 
 PRODUCT_PLATFORM := universal9611
 
-TARGET_OTA_ASSERT_DEVICE := m307fn,m30s,m30sdd
+TARGET_OTA_ASSERT_DEVICE := m21,m21ns,m21nsxx
 
 # APEX IMAGE #
 DEXPREOPT_GENERATE_APEX_IMAGE := true
